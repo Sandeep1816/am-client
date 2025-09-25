@@ -1,0 +1,11 @@
+# Fetch all products
+query GetProducts {
+  products {
+    id
+    name
+    description
+    price
+    createdAt
+    updatedAt
+  }
+}

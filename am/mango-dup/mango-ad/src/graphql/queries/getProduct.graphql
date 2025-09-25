@@ -1,0 +1,11 @@
+# Fetch single product
+query GetProduct($id: String!) {
+  product(id: $id) {
+    id
+    name
+    description
+    price
+    createdAt
+    updatedAt
+  }
+}
