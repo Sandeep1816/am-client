@@ -1,0 +1,22 @@
+mutation CreateCategory($data: CreateCategoryInput!) {
+  createCategory(data: $data) {
+    id
+    name
+    slug
+  }
+}
+
+mutation UpdateCategory($id: String!, $data: UpdateCategoryInput!) {
+  updateCategory(id: $id, data: $data) {
+    id
+    name
+    slug
+  }
+}
+
+mutation DeleteCategory($id: String!) {
+  deleteCategory(id: $id) {
+    id
+    name
+  }
+}

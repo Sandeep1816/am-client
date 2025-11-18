@@ -1,0 +1,34 @@
+mutation CreateProduct($data: CreateProductInput!) {
+  createProduct(data: $data) {
+    id
+    title
+    slug
+    description
+    imageUrl
+    price
+    stock
+    isFavourite
+    categoryId
+  }
+}
+
+mutation UpdateProduct($id: String!, $data: UpdateProductInput!) {
+  updateProduct(id: $id, data: $data) {
+    id
+    title
+    slug
+    description
+    imageUrl
+    price
+    stock
+    isFavourite
+    categoryId
+  }
+}
+
+mutation DeleteProduct($id: String!) {
+  deleteProduct(id: $id) {
+    id
+    title
+  }
+}
